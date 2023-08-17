@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes a number as input and prints it 10 times
 
 int main()
 {
@@ -8,7 +9,7 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
-        printf("\n%d", number);
+        printf("%d\n", number);
     }
 
     return 0;

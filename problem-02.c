@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes a number as input and determines whether it is even or odd
 
 int main()
 {
