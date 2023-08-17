@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes a number as input and prints its table upto 10
 
 int main()
 {
@@ -7,9 +8,9 @@ int main()
     printf("Enter the number whose table is to be printed: ");
     scanf("%d", &number);
 
-    for (int i = 1; i <= 10; i++)
+    for (int i = 0; i < 10; i++)
     {
-        printf("\n%d x %d = %d", number, i, number * i);
+        printf("%d x %d = %d\n", number, i, number * i);
     }
 
     return 0;

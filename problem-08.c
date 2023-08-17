@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes a number as input and adds its digits
 
 int main()
 {
