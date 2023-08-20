@@ -1,4 +1,7 @@
 #include <stdio.h>
+/* Declares two arrays of float type of size 10, takes input from user in both arrays
+and determines if there is any element in array 1 which has smaller value than any
+ of the element in array 2 */
 
 int main()
 {

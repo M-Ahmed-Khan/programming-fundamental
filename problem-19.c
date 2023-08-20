@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes 10 inputs from user and computes highest, lowest and average
 
 int main()
 {

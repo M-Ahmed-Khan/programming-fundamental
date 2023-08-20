@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Creates an array of 10 elements and assigns 0 to each element using a loop
 
 int main()
 {

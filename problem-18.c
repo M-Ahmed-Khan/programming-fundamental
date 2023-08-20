@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes 10 inputs from user and stores them in array and prints them
 
 int main()
 {

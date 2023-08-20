@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Uses parallel arrays to show names, roll numbers and percentages of 5 students
 
 int main()
 {
