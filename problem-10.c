@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+// Takes a number as input and determines whether it is a prime number or not
 
 int main()
 {

@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes two numbers as input and swap their values
 
 int main()
 {

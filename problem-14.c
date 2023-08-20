@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Prints a diamond made of asterisks(*) of a specified size
 
 int main()
 {

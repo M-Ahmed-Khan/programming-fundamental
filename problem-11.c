@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes a number as input and reverses its digits
 
 int main()
 {

@@ -1,8 +1,9 @@
 #include <stdio.h>
+// Prints fibonacci series of a given length
 
 int main()
 {
-    int length, next, firstNum = 0, secondNum = 1;
+    int length, sum, firstNum = 0, secondNum = 1;
 
     printf("---------FIBONACCI SERIES---------\n");
 
@@ -25,9 +26,9 @@ int main()
             printf("%d, ", firstNum);
         }
 
-        next = firstNum + secondNum;
+        sum = firstNum + secondNum;
         firstNum = secondNum;
-        secondNum = next;
+        secondNum = sum;
     }
 
     return 0;

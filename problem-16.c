@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+// Basic calculator program that performs addition, subtraction, multiplication and division
 
 int getSum(int firstNum, int secondNum);
 int getDifference(int firstNum, int secondNum);
