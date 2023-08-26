@@ -7,7 +7,7 @@ int main()
     int roll_numbers[5];
     float percentages[5];
 
-    printf("Enter data of 5 students:\n\n");
+    printf("Enter data of 5 students:\n");
 
     for (int i = 0; i < 5; i++)
     {
@@ -23,11 +23,11 @@ int main()
         scanf("%f", &percentages[i]);
     }
 
-    printf("Name   Roll no   %c\n", 37);
-
     for (int i = 0; i < 5; i++)
     {
-        printf("%s\t %d      %.1f\n", names[i], roll_numbers[i], percentages[i]);
+        printf("\nName: %s", names[i]);
+        printf("\nRoll number: %d", roll_numbers[i]);
+        printf("\nPercentage: %.2f\n", percentages[i]); // A \n at the end so the data of 1 student is spaced from the other
     }
     return 0;
 }

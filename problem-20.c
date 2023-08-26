@@ -8,15 +8,17 @@ int main()
     float array_1[10], array_2[10];
     int no_of_elements_smaller = 0;
 
-    printf("Enter 10 numbers(floating point): ");
+    printf("Enter 10 numbers(floating point): \n");
     for (int i = 0; i < 10; i++)
     {
-        scanf("%f, ", &array_1[i]);
+        printf("Enter a number(Element #%d): ", i + 1);
+        scanf("%f", &array_1[i]);
     }
 
-    printf("Enter 10 more numbers: ");
+    printf("Enter 10 more numbers: \n");
     for (int i = 0; i < 10; i++)
     {
+        printf("Enter a number(Element #%d): ", i + 1);
         scanf("%f, ", &array_2[i]);
     }
 
@@ -27,6 +29,7 @@ int main()
             if (array_1[i] < array_2[j])
             {
                 no_of_elements_smaller++;
+                break;
             }
         }
     }
