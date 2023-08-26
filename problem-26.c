@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Stores “Hello World” to the text file and then shows content of the file on terminal after reading
 
 int main()
 {

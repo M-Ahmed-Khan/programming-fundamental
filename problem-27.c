@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// Stores “Hello World” to the binary file and then shows content of the file on terminal after reading
 
 int main()
 {

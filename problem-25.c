@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Takes 10 numbers from user in array and sorts them
 
 int main()
 {

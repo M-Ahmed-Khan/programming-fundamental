@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// Uses structures to show names, roll numbers and percentages of 5 students but stores and reads content from text file
 
 typedef struct
 {
