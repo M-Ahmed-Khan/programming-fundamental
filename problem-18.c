@@ -7,7 +7,7 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
-        printf("Enter element %d: ", i + 1);
+        printf("Enter a number(Element #%d): ", i + 1);
         scanf("%d", &numbers[i]);
     }
 

@@ -6,7 +6,7 @@ and determines if there is any element in array 1 which has smaller value than a
 int main()
 {
     float array_1[10], array_2[10];
-    int flag = 0;
+    int no_of_elements_smaller = 0;
 
     printf("Enter 10 numbers(floating point): ");
     for (int i = 0; i < 10; i++)
@@ -26,12 +26,12 @@ int main()
         {
             if (array_1[i] < array_2[j])
             {
-                flag++;
+                no_of_elements_smaller++;
             }
         }
     }
 
-    printf("%d elements of array 1 are smaller than any of the elements in array 2", flag);
+    printf("%d elements of array 1 are smaller than any of the elements in array 2", no_of_elements_smaller);
 
     return 0;
 }
