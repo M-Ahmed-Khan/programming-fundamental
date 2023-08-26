@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <time.h>
+/* Creates an array where user will input the size of the array and then
+puts random values in each element of the array. After that takes input
+from the user about what to search and based on this input it finds
+whether search number exists in an array or not */
 
 int main()
 {

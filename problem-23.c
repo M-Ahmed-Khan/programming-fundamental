@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Creates a 2D array of 3*4, takes input in each index and then prints the array
 
 int main()
 {

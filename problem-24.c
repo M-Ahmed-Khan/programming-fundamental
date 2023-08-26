@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+/* Creates two dynamic 2D integer arrays, takes input from
+user in both 2D arrays and applies matrix multiplication
+then displays the result */
 
 int main()
 {
