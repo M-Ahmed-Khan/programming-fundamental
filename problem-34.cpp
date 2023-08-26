@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+/* Creates a "Person" class with attributes "name" and "age",
+implements a derived class "Employee" that inherits from "Person"
+and has an additional attribute "salary" and displays the employee’s
+information using a method */
 
 using namespace std;
 

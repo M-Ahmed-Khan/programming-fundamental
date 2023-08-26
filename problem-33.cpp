@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+/* Creates a "BankAccount" class with attributes "accountNumber",
+"accountHolder", and "balance" and implements methods to deposit,
+withdraw, and display the account balance */
 
 using namespace std;
 

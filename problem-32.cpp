@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+/* Creates a "Rectangle" class with attributes "width" and "height".
+and implements methods to calculate the "area" and "perimeter" of
+the rectangle */
 
 using namespace std;
 

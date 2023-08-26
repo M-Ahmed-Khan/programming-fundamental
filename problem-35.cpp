@@ -1,5 +1,9 @@
 #include <iostream>
 #define pi 3.14
+/* Creates a "Shape" base class with a method "area()" and
+two derived classes "Circle" and "Square" and implements
+the "area()" method in each derived class to calculate the
+area of the circle and square, respectively */
 
 using namespace std;
 
