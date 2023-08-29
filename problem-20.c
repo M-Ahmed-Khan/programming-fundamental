@@ -15,7 +15,7 @@ int main()
         scanf("%f", &array_1[i]);
     }
 
-    printf("Enter 10 more numbers: \n");
+    printf("\nEnter 10 more numbers: ");
     for (int i = 0; i < 10; i++)
     {
         printf("Enter a number(Element #%d): ", i + 1);
