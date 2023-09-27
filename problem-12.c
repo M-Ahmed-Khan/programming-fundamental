@@ -1,6 +1,19 @@
 #include <stdio.h>
+
 // Takes a number as input and determines whether it is an Armstrong number or not
 
+/**
+ * Raises a given number to a given power.
+ *
+ * This function takes two integers as input, raises the number to the power,
+ * and returns the result as an integer. It performs basic exponentiation and
+ * does not handle overflow or error cases.
+ *
+ * @param number The number which is to be raised to the power.
+ * @param power The power to which the number is raised .
+ *
+ * @return The number raised to the power.
+ */
 int exponent(int number, int power)
 {
     int exp = 1;
@@ -13,7 +26,7 @@ int exponent(int number, int power)
 
 int main()
 {
-    int number, sum = 0, numberOfDigits = 0;
+    int number, sum = 0, digitsCount = 0;
 
     printf("---------ARMSTRONG NUMBERS---------\n");
 
@@ -22,18 +35,19 @@ int main()
 
     int originalNum = number;
 
-    for (int copyOfNum = number; copyOfNum > 0; copyOfNum /= 10)
+    // Calculating the number of digits
+    for (int num = number; num > 0; num /= 10)
     {
-        numberOfDigits++; // Calculating the number of digits
+        digitsCount++; 
     }
 
     for (number; number != 0; number /= 10)
     {
         int digit = number % 10;
-        sum += exponent(digit, numberOfDigits);
+        sum += exponent(digit, digitsCount);
     }
 
-    (sum == originalNum) ? printf("%d is an Armstrong number", originalNum) : printf("%d is not an Armstrong number", originalNum);
+    sum == originalNum ? printf("%d is an Armstrong number", originalNum) : printf("%d is not an Armstrong number", originalNum);
 
     return 0;
 }

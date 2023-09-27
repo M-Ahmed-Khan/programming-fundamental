@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 // Prints fibonacci series of a given length
 
 int main()
@@ -7,7 +8,7 @@ int main()
 
     printf("---------FIBONACCI SERIES---------\n");
 
-    printf("Enter the lentgh of fibonacci series: ");
+    printf("Enter the length of fibonacci series: ");
     scanf("%d", &length);
 
     if (length == 0)
@@ -17,13 +18,10 @@ int main()
 
     for (int i = 0; i < length; i++)
     {
-        if (i == length - 1)
+        printf("%d", firstNum);
+        if (i != length - 1)
         {
-            printf("%d", firstNum);
-        }
-        else
-        {
-            printf("%d, ", firstNum);
+            printf(", ");
         }
 
         sum = firstNum + secondNum;

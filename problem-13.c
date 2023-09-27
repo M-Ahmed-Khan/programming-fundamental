@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 // Takes a number as input and determines whether it is a palindrome number or not
 
 int main()
@@ -18,7 +19,7 @@ int main()
         reversedNumber = (reversedNumber * 10) + lastDigit;
     }
 
-    (reversedNumber == originalNumber) ? printf("%d is a palindrome number", originalNumber) : printf("%d is not a palindrome number", originalNumber);
+    reversedNumber == originalNumber ? printf("%d is a palindrome number", originalNumber) : printf("%d is not a palindrome number", originalNumber);
 
     return 0;
 }

@@ -1,54 +1,63 @@
 #include <stdio.h>
 #include <stdbool.h>
+
 // Basic calculator program that performs addition, subtraction, multiplication and division
 
-int getSum(int firstNum, int secondNum);
-int getDifference(int firstNum, int secondNum);
-int getProduct(int firstNum, int secondNum);
-int getQuotient(int firstNum, int secondNum);
+int getAddition(int firstNum, int secondNum);
+int getSubtraction(int firstNum, int secondNum);
+int getMultiplication(int firstNum, int secondNum);
+int getDivision(int firstNum, int secondNum);
 
 int main()
 {
-    int firstNum, secondNum, user_choice;
+    int firstNum, secondNum;
     printf("---------CALCULATOR---------\n");
 
-    printf("First number = ");
+    printf("\n1. Addition");
+    printf("\n2. Subtraction");
+    printf("\n3. Multiplication");
+    printf("\n4. Division\n");
+
+    printf("\nFirst number = ");
     scanf("%d", &firstNum);
 
     printf("Second Number = ");
     scanf("%d", &secondNum);
 
-    printf("\n1. Addition");
-    printf("\n2. Subtraction");
-    printf("\n3. Multiplication");
-    printf("\n4. Division");
+    enum Operator {
+        addition = 1,
+        subtraction,
+        multiplication,
+        division
+    };
 
+    int userChoice;
     while (true)
     {
         printf("\n\nEnter your choice: ");
-        scanf("%d", &user_choice);
+        scanf("%d", &userChoice);
 
-        if (user_choice == 1)
+        if (userChoice == addition)
         {
-            printf("\nThe sum of %d and %d is %d", firstNum, secondNum, getSum(firstNum, secondNum));
+            printf("\nThe addition of %d and %d is %d", firstNum, secondNum, getAddition(firstNum, secondNum));
             break;
         }
 
-        else if (user_choice == 2)
+        else if (userChoice == subtraction)
         {
-            printf("\nThe difference of %d and %d is %d", firstNum, secondNum, getDifference(firstNum, secondNum));
+            printf("\nThe subtraction of %d and %d is %d", firstNum, secondNum, getSubtraction(firstNum, secondNum));
             break;
         }
 
-        else if (user_choice == 3)
+        else if (userChoice == multiplication)
         {
-            printf("\nThe Product of %d and %d is %d", firstNum, secondNum, getProduct(firstNum, secondNum));
+            printf("\nThe multiplication of %d and %d is %d", firstNum, secondNum, getMultiplication(firstNum, secondNum));
             break;
         }
 
-        else if (user_choice == 4)
+        else if (userChoice == division)
         {
-            printf("\nThe Quotient of %d and %d is %d", firstNum, secondNum, getQuotient(firstNum, secondNum));
+            printf("\nThe division of %d and %d is %d", firstNum, secondNum, getDivision(firstNum, secondNum));
             break;
         }
 
@@ -61,22 +70,22 @@ int main()
     return 0;
 }
 
-int getSum(int firstNum, int secondNum)
+int getAddition(int firstNum, int secondNum)
 {
     return firstNum + secondNum;
 }
 
-int getDifference(int firstNum, int secondNum)
+int getSubtraction(int firstNum, int secondNum)
 {
     return firstNum - secondNum;
 }
 
-int getProduct(int firstNum, int secondNum)
+int getMultiplication(int firstNum, int secondNum)
 {
     return firstNum * secondNum;
 }
 
-int getQuotient(int firstNum, int secondNum)
+int getDivision(int firstNum, int secondNum)
 {
     return firstNum / secondNum;
 }

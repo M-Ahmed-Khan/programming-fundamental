@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+
 // Takes a number as input and determines whether it is a prime number or not
 
 int main()
@@ -26,7 +27,7 @@ int main()
         }
     }
 
-    (isPrime) ? printf("%d is a prime number", number) : printf("%d is not a prime number", number);
+    isPrime ? printf("%d is a prime number", number) : printf("%d is not a prime number", number);
 
     return 0;
 }
