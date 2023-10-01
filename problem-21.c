@@ -1,11 +1,14 @@
 #include <stdio.h>
+
 // Uses parallel arrays to show names, roll numbers and percentages of 5 students
 
 int main()
 {
-    char names[5][30];
-    int roll_numbers[5];
-    float percentages[5];
+    const int numberOfStudents = 5;
+    const int maxNameLength = 30;
+    char names[numberOfStudents][maxNameLength];
+    int rollNumbers[numberOfStudents];
+    float percentages[numberOfStudents];
 
     printf("Enter data of 5 students:\n");
 
@@ -17,7 +20,7 @@ int main()
         scanf("%s", &names[i]);
 
         printf("Roll Number: ");
-        scanf("%d", &roll_numbers[i]);
+        scanf("%d", &rollNumbers[i]);
 
         printf("Percentage: ");
         scanf("%f", &percentages[i]);
@@ -26,8 +29,9 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         printf("\nName: %s", names[i]);
-        printf("\nRoll number: %d", roll_numbers[i]);
-        printf("\nPercentage: %.2f\n", percentages[i]); // A \n at the end so the data of 1 student is spaced from the other
+        printf("\nRoll number: %d", rollNumbers[i]);
+        printf("\nPercentage: %.2f", percentages[i]);
+        printf("\n");
     }
     return 0;
 }

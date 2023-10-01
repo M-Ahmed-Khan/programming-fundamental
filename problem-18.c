@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 // Takes 10 inputs from user and stores them in array and prints them
 
 int main()
 {
-    int numbers[10];
+    const int arrayLength = 10;
+    int numbers[arrayLength];
 
     for (int i = 0; i < 10; i++)
     {

@@ -1,10 +1,11 @@
 #include <stdio.h>
+
 // Takes 10 inputs from user and computes highest, lowest and average
 
 int main()
 {
-    int numbers[10];
-    int sum = 0;
+    const int arrayLength = 10;
+    int numbers[arrayLength];
 
     for (int i = 0; i < 10; i++)
     {
@@ -41,6 +42,8 @@ int main()
     printf("The lowest number is %d\n", lowest);
 
     // ------------Average------------
+    
+    int sum = 0;
     for (int i = 0; i < 10; i++)
     {
         sum += numbers[i];
