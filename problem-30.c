@@ -11,27 +11,28 @@ typedef struct
 int main()
 {
     FILE *file;
-    Student data[5];
+    const int numberOfStudents = 5;
+    Student student_data[numberOfStudents];
 
-    printf("Enter data of 5 students:\n\n");
+    printf("Enter  of 5 students:\n\n");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < numberOfStudents; i++)
     {
         printf("\nStudent %d\n", i + 1);
 
         printf("Name: ");
-        scanf("%s", &data[i].name);
+        scanf("%s", &student_data[i].name);
 
         printf("Roll Number: ");
-        scanf("%d", &data[i].roll_number);
+        scanf("%d", &student_data[i].roll_number);
 
         printf("Percentage: ");
-        scanf("%f", &data[i].percentage);
+        scanf("%f", &student_data[i].percentage);
     }
 
-    file = fopen("binary-files/student-data.bin", "wb");
+    file = fopen("binary-files/student-.bin", "wb");
 
-    fwrite(data, sizeof(Student), 5, file);
+    fwrite(student_data, sizeof(Student), numberOfStudents, file);
 
     fclose(file);
 
@@ -42,15 +43,15 @@ int main()
         return 1;
     }
 
-    Student students[5];
+    Student students[numberOfStudents];
 
-    fread(students, sizeof(Student), 5, file);
+    fread(students, sizeof(Student), numberOfStudents, file);
 
-    printf("Name   Roll no   %c\n", 37);
+    printf("Name\tRoll no\t%%\n");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < numberOfStudents; i++)
     {
-        printf("%s\t %d      %.1f\n", students[i].name, students[i].roll_number, students[i].percentage);
+        printf("%s\t%d\t%.1f\n", students[i].name, students[i].roll_number, students[i].percentage);
     }
 
     fclose(file);

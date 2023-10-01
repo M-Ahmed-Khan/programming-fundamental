@@ -12,29 +12,30 @@ typedef struct
 int main()
 {
     FILE *file;
-    Student data[5];
+    const int numberOfStudents = 5;
+    Student student_data[numberOfStudents];
 
     printf("Enter data of 5 students:\n\n");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < numberOfStudents; i++)
     {
         printf("\nStudent %d\n", i + 1);
 
         printf("Name: ");
-        scanf("%s", &data[i].name);
+        scanf("%s", &student_data[i].name);
 
         printf("Roll Number: ");
-        scanf("%d", &data[i].roll_number);
+        scanf("%d", &student_data[i].roll_number);
 
         printf("Percentage: ");
-        scanf("%f", &data[i].percentage);
+        scanf("%f", &student_data[i].percentage);
     }
 
     file = fopen("text-files/student-data.txt", "w");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < numberOfStudents; i++)
     {
-        fprintf(file, "%s %d %.1f\n", data[i].name, data[i].roll_number, data[i].percentage);
+        fprintf(file, "%s\n%d\n%.1f\n", student_data[i].name, student_data[i].roll_number, student_data[i].percentage);
     }
 
     fclose(file);
@@ -47,19 +48,20 @@ int main()
         return 1;
     }
 
-    Student students[5];
+    Student students[numberOfStudents];
 
-    for (int i = 0; i < 5; i++)
+    const int maxNameLength = 50;
+    for (int i = 0; i < numberOfStudents; i++)
     {
-        students[i].name = malloc(50 * sizeof(char));
-        fscanf(file, "%s %d %f", students[i].name, &(students[i].roll_number), &(students[i].percentage));
+        students[i].name = malloc(maxNameLength * sizeof(char));
+        fscanf(file, "%s\n%d\n%f", students[i].name, &(students[i].roll_number), &(students[i].percentage));
     }
 
-    printf("Name   Roll no   %c\n", 37);
+    printf("Name\tRoll no\t%%\n");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < numberOfStudents; i++)
     {
-        printf("%s\t %d      %.1f\n", students[i].name, students[i].roll_number, students[i].percentage);
+        printf("%s\t%d\t%.1f\n", students[i].name, students[i].roll_number, students[i].percentage);
     }
 
     fclose(file);

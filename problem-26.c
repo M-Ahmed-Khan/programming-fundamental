@@ -4,6 +4,7 @@
 int main()
 {
     FILE *file;
+    const int HelloWorldLength = 12;
 
     file = fopen("text-files/hello.txt", "w");
     fprintf(file, "Hello World");
@@ -17,8 +18,8 @@ int main()
         return 1;
     }
 
-    int maxCharsToRead = 100;
-    char line[maxCharsToRead];
+    int maxCharsToRead = HelloWorldLength;
+    char line[HelloWorldLength];
 
     fgets(line, maxCharsToRead, file);
 

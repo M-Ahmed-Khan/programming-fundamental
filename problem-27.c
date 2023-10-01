@@ -5,12 +5,13 @@
 int main()
 {
     FILE *file;
+    const int dataLength = 12;
     char data[] = "Hello World";
-    int maxCharsToRead = 100;
+    int maxCharsToRead = dataLength;
     char *line;
 
     file = fopen("binary-files/hello.bin", "wb");
-    fwrite(data, sizeof(data), 11, file);
+    fwrite(data, sizeof(data), dataLength, file);
     fclose(file);
 
     file = fopen("binary-files/hello.bin", "rb");
@@ -21,9 +22,9 @@ int main()
         return 1;
     }
 
-    line = (char *)malloc(sizeof(char) * 11);
+    line = (char *)malloc(sizeof(char) * dataLength);
 
-    fread(line, sizeof(char), 11, file);
+    fread(line, sizeof(char), dataLength, file);
 
     printf("%s", line);
 

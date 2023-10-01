@@ -10,11 +10,12 @@ typedef struct
 
 int main()
 {
-    Student students[5];
+    const int numberOfStudents = 5;
+    Student students[numberOfStudents];
 
     printf("Enter data of 5 students:\n\n");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < numberOfStudents; i++)
     {
         printf("\nStudent %d\n", i + 1);
 
@@ -28,11 +29,11 @@ int main()
         scanf("%f", &students[i].percentage);
     }
 
-    printf("Name   Roll no   %c\n", 37); // 37 in ASCII = %
+    printf("Name\tRoll no\t%%\n");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < numberOfStudents; i++)
     {
-        printf("%s\t %d      %.1f\n", students[i].name, students[i].roll_number, students[i].percentage);
+        printf("%s\t %d\t%.1f\n", students[i].name, students[i].roll_number, students[i].percentage);
     }
 
     return 0;
