@@ -18,7 +18,6 @@
  *
  * @return void.
  */
-
 void inputFloatArray(float *array, int length) 
 {
     for (int i = 0; i < length; i++)
@@ -40,9 +39,9 @@ int main()
     printf("\nEnter 10 more numbers: ");
     inputFloatArray(array2, arrayLength);
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < arrayLength; i++)
     {
-        for (int j = 0; j < 10; j++)
+        for (int j = 0; j < arrayLength; j++)
         {
             if (array1[i] < array2[j])
             {

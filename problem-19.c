@@ -17,7 +17,7 @@ int main()
 
     int greatest = numbers[0];
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < arrayLength; i++)
     {
         if (greatest < numbers[i])
         {
@@ -31,7 +31,7 @@ int main()
 
     int lowest = numbers[0];
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < arrayLength; i++)
     {
         if (lowest > numbers[i])
         {
@@ -44,7 +44,7 @@ int main()
     // ------------Average------------
     
     int sum = 0;
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < arrayLength; i++)
     {
         sum += numbers[i];
     }

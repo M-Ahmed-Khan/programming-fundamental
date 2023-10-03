@@ -7,13 +7,13 @@ int main()
     const int arrayLength = 10;
     int numbers[arrayLength];
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < arrayLength; i++)
     {
         printf("Enter a number(Element #%d): ", i + 1);
         scanf("%d", &numbers[i]);
     }
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < arrayLength; i++)
     {
         printf("%d\t", numbers[i]);
     }

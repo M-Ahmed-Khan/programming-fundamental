@@ -10,7 +10,7 @@ int main()
     int rollNumbers[numberOfStudents];
     float percentages[numberOfStudents];
 
-    printf("Enter data of 5 students:\n");
+    printf("Enter data of %d students:\n", numberOfStudents);
 
     for (int i = 0; i < 5; i++)
     {
