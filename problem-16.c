@@ -8,6 +8,13 @@ int getSubtraction(int firstNum, int secondNum);
 int getMultiplication(int firstNum, int secondNum);
 int getDivision(int firstNum, int secondNum);
 
+enum Operation {
+        addition = 1,
+        subtraction = 2,
+        multiplication = 3,
+        division = 4
+    };
+
 int main()
 {
     int firstNum, secondNum;
@@ -23,13 +30,6 @@ int main()
 
     printf("Second Number = ");
     scanf("%d", &secondNum);
-
-    enum Operator {
-        addition = 1,
-        subtraction,
-        multiplication,
-        division
-    };
 
     int userChoice;
     while (true)

@@ -5,10 +5,6 @@
 /**
  * Raises a given number to a given power.
  *
- * This function takes two integers as input, raises the number to the power,
- * and returns the result as an integer. It performs basic exponentiation and
- * does not handle overflow or error cases.
- *
  * @param number The number which is to be raised to the power.
  * @param power The power to which the number is raised .
  *
