@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-weight: 500;
+  --primary-color: #0155b5;
+  --secondary-color: #f9d759;
+  --dark-color: #1d2127;
+}
+
+body {
+  width: 82.5%;
+  margin: auto;
+  font-family: 'Poppins';
+}
+
+/* ------------TOP MENU------------ */
+
+.menu {
+  display: flex;
+  padding: 10px 0;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu > ul > li {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu h3 {
+  font-weight: normal;
+}
+
+.dropdowns {
+  flex-grow: 2;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.menu ul li a:hover {
+  color: var(--primary-color);
+} 
+
