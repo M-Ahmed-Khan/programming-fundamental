@@ -5,27 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <script src="https://kit.fontawesome.com/e0e164e943.js" crossorigin="anonymous"></script>
   <title>Home - Shop 46</title>
 </head>
 <body>
   <header>
-    <nav class="menu">
+    <nav class="menu1">
       <h3>FREE Express Shipping On Orders $99+</h3>
       <ul class="dropdowns">
         <li class="dropdown">
-          USD&nbsp;<i class="material-icons" style="font-size: 14px;">keyboard_arrow_down</i>
+          <span class="dropdown-text">USD&nbsp;<i class="material-icons" style="font-size: 14px;">keyboard_arrow_down</i></span>
+          <div class="dropdown-content">
+            <ul class="dropdown-list">
+              <li>USD</li>
+              <li>EUR</li>
+            </ul>
+          </div>
         </li>
         <li class="dropdown">
-          ENG&nbsp;<i class="material-icons" style="font-size: 14px;">keyboard_arrow_down</i>
+          <span class="dropdown-text">ENG&nbsp;<i class="material-icons" style="font-size: 14px;">keyboard_arrow_down</i></span>
+          <div class="dropdown-content">
+            <ul class="dropdown-list">
+              <li>ENG</li>
+              <li>FRH</li>
+            </ul>
+          </div>
         </li>
       </ul>
       <ul>
-        <li><i class="material-icons" style="font-size:2rem;">location_on</i>&nbsp;<a href="#">Our Stores</a></li>
-        <li><i class="material-icons" style="font-size:2rem;">local_shipping</i>&nbsp;<a href="#">Track Your Order</a></li>
-        <li><i class="material-icons" style="font-size:2rem;">help</i>&nbsp;<a href="#">Help</a></li>
-        <li><i class="material-icons" style="font-size:2rem;">favorite</i>&nbsp;<a href="#">Wishlist</a></li>
+        <li><i class="material-icons-outlined" style="font-size:2rem;font-weight:10">location_on</i>&nbsp;<a href="#">Our Stores</a></li>
+        <li><i class="material-icons-outlined" style="font-size:2rem;font-weight:10">local_shipping</i>&nbsp;<a href="#">Track Your Order</a></li>
+        <li><i class="material-icons-outlined" style="font-size:2rem;font-weight:10">help</i>&nbsp;<a href="#">Help</a></li>
+        <li><i class="material-icons-outlined" style="font-size:2rem;font-weight:10">favorite</i>&nbsp;<a href="#">Wishlist</a></li>
       </ul>
     </nav>
+    <div class="menu2">
+      <div class="logo">
+        <img src="images/porto-logo.png" alt="porto logo" />
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-text" placeholder="Search..." />
+        <div class="category">
+          <select name="category" id="category">
+            <option value="all_categories" selected>All Categories</option>
+            <option value="kitchen">Kitchen</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="sports">Sports</option>
+            <option value="luggage">Luggage</option>
+            <option value="tools">Tools</option>
+            <option value="automotive">Automotive</option>
+            <option value="storage">Storage</option>
+            <option value="appliances">Appliances</option>
+            <option value="lighting">Lighting</option>
+            <option value="table_and_desks">Table and Desks</option>
+            <option value="home_and_decor">Home and Decor</option>
+          </select>
+        </div>
+        <div class="search-icon-container">
+          <i class="fa-solid fa-magnifying-glass" style="font-size:2.5rem;"></i>
+        </div>
+      </div>
+      <div class="sign-in">
+        <div class="user-icon-container">
+          <i class="fa-regular fa-user" id="user-icon"></i>
+        </div>
+        <div class="sign-in-text">
+          <h3>Welcome</h3>
+          <p>Sign&nbsp;In&nbsp;/&nbsp;Register</p>
+        </div>
+      </div>
+      <div class="shopping-cart">
+        <div class="cart-icon-container">
+          <i class="material-icons-outlined" id="bag-icon">shopping_bag</i>
+          <div class="no-of-items">0</div>
+        </div>
+        <div class="cart-text">
+          <h3>Shopping&nbsp;Cart</h3>
+          <p>$0.00</p>
+        </div>
+      </div>
+    </div>
   </header>
 </body>
 </html>
